@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator walut</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <form class="form js-form">
+        <div class="form__fieldset">
+        <h1 class="form__heading">Kalkulator walut</h1>
+          <p>
+            <label class="form__labelText">Kwota w zł:</label>
+            <input
+              class="form__field js-amount"
+              required
+              step="0.01"
+              type="number"
+            />
+          </p>
+          <p>
+            <label class="form__labelText">Waluta:</label>
+            <select class="form__field js-currency">
+              <option value="EUR">Euro</option>
+              <option value="USD">Dolar amerykański</option>
+              <option value="SEK">Korona szwedzka</option>
+              <option value="GBP">Funt brytyjski</option>
+            </select>
+          </p>
+        </div>
+        <p><span class="js-result"></span></p>
+        <p class="form__comment">Kursy NBP z dnia 21.04.2023 r.</p>
+      </form>
+    </div>
+  </body>
+</html>
